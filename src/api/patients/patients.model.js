@@ -36,3 +36,7 @@ const patientSchema = new mongoose.Schema(
        
     }
 )
+
+const Patient = mongoose.model("patients", patientSchema);
+
+module.exports = Patient;

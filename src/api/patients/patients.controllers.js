@@ -76,6 +76,6 @@ module.exports = {
     indexGet, //read
     createPost, //Create
     editPut,//update
-    deleteCharacter, //delete
+    deletePatient, //delete
     getByName
 }
