@@ -1,5 +1,6 @@
 const express = require('express')
 const db = require('./src/utils/db.js')
+const cors = require('cors')
 
 db.connectDB();
 
@@ -11,6 +12,7 @@ const app = express();
 
 //req.body transform
 app.use(express.json());
+app.use(cors())
 
 app.use(express.urlencoded({
     extended: true

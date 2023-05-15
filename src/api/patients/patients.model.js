@@ -9,8 +9,8 @@ const patientSchema = new mongoose.Schema(
         "specie": {
             type: [String],
             enum: [
-                'Dog',
-                'Cat',
+                'dog',
+                'cat',
             ]
         },
         "owner": {
