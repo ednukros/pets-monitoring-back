@@ -9,8 +9,6 @@ const patientsRoutes = require("./src/api/patients/patients.routes");
 
 const PORT = process.env.PORT || 3001;
 const app = express();
-
-//req.body transform
 app.use(express.json());
 app.use(cors())
 

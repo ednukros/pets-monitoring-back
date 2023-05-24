@@ -2,16 +2,16 @@ const mongoose = require('mongoose');
 
 const patientSchema = new mongoose.Schema(
     {
-        "name": {
+        "petName": {
             type: String,
             
         },
         "specie": {
-            type: [String],
-            enum: [
-                'dog',
-                'cat',
-            ]
+            type: String,
+            // enum: [
+            //     'dog',
+            //     'cat',
+            // ]
         },
         "owner": {
             type: String,
@@ -25,6 +25,7 @@ const patientSchema = new mongoose.Schema(
             type: String,
             
         },
+        
         "treatment": {
             type: String,
             
